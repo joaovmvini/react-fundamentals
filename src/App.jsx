@@ -7,14 +7,31 @@ import Primeiro from "./components/basicos/Primeiro";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
 export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#07 - Tabela de Produtos" color="lightblue">
+        <TabelaProdutos />
+      </Card>
+    </div>
+
+    <div className="Cards">
+      <Card titulo="#06 - Lista de Alunos" color="#FF4C65">
+        <ListaAlunos />
+      </Card>
+
       <Card titulo="#05 - Componente com filhos" color="#00C8F8">
-        <Familia />
+        <Familia lastName="Fernandes">
+          <FamiliaMembro name="João" />
+          <FamiliaMembro name="Pedro" />
+          <FamiliaMembro name="Marcus" />
+        </Familia>
       </Card>
 
       <Card titulo="#04 - Desafio aleatório" color="#FA6900">
