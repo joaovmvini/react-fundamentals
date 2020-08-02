@@ -30,7 +30,7 @@ export default (props) => {
             </td>
           </tr>
         </thead>
-        {productHtml}
+        <tbody>{productHtml}</tbody>
       </table>
     </div>
   );
